@@ -1,0 +1,50 @@
+.skill__wrap {
+	display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+	height: 90vh;
+}
+.skill__item {
+	width: calc(100%/3);
+}
+.skill__header {
+    font-family: "Roboto Slab";
+    font-weight: 100;
+    font-size: 2rem;
+    padding-bottom: 0.875rem;
+}
+.skill__text {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+/* ------ end skill ------- */
+
+/* -------- icon --------- */
+.skill__social {
+	display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.social__icon {
+    border-bottom: 3px dotted #444;
+    border-radius: 45%;
+    padding-bottom: 5px;
+    &:after {
+        content: " ";
+        display: block;
+        background: url(../img/icons-pack.png) no-repeat;
+        width: 45px;
+        height: 40px;
+    }
+    &:hover {
+        border-bottom: 3px dashed #aaa;
+        border-radius: 45%;
+        transition: all 0.3s ease 0s;
+    }
+}
+.noactive:after {opacity: 0.4;}
+.social__icon--behance:after {background-position: -104px -154px;}
+.social__icon--linkedin:after {background-position: -292px -12px;}
+.social__icon--mail:after {background-position: -104px -106px;}
+.social__icon--pinterest:after {background-position: -58px -154px;}

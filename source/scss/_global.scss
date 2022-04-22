@@ -1,0 +1,32 @@
+body {
+    font: 1rem/16px Raleway;
+    background: $black;
+    color: #ccc;
+    margin:0;
+    padding: 0;
+}
+a {
+    color: $white;
+    &:hover,
+    &:active {
+        color: $aqua;
+    }
+    &:visited {
+        color: $white;
+    }
+}
+
+.container {
+    max-width: $bp-d;
+    margin: 0 auto;
+}
+.wrapper_all {
+    display: flex;
+    flex-grow: 1;
+}
+.btn {
+    display: block;
+    padding: 2em 5em;
+    background-color: $aqua;
+    border-radius: 0.5em;
+}
